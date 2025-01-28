@@ -2,9 +2,9 @@ import PieceModel from "./PieceModel";
 
 
 export default class SquareModel {
-    private readonly row : number;
-    private readonly column: number;
-    private piece : PieceModel;
+     readonly row : number;
+     readonly column: number;
+     piece : PieceModel;
     
     constructor(row : number, column : number){
         this.row = row;

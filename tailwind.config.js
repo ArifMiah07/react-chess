@@ -1,3 +1,17 @@
+const rowStartSafelist = [];
+const columnStartSafelist = [];
+
+for(let i = 1; i <= 8; i++){
+	rowStartSafelist.push(`row-start-${i}`)
+	columnStartSafelist.push(`col-start-${i}`)
+}
+
+// for(let i = 0; i < 8; i++){
+// 	rowStartSafelist.push(`row-start-${i}`)
+// }
+
+
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     darkMode: ["class"],
@@ -54,4 +68,5 @@ module.exports = {
   	}
   },
   plugins: [require("tailwindcss-animate")],
+  safelist: [...rowStartSafelist, ...columnStartSafelist]
 }
